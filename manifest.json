@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "BestTextileIQ",
+  "version": "1.2",
+  "description": "Detects fast-fashion websites and nudges users toward ethical alternatives while tracking visit counts locally.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.shein.com/*",
+        "*://*.zara.com/*",
+        "*://*.hm.com/*",
+        "*://*.forever21.com/*",
+        "*://*.fashionnova.com/*",
+        "*://*.boohoo.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}

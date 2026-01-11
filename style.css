@@ -1,0 +1,60 @@
+
+
+#btq-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  font-family: sans-serif;
+}
+
+.btq-box {
+  background: blue;
+  color: white;
+  padding: 24px;
+  border-radius: 14px;
+  width: 360px;
+  text-align: center;
+}
+
+.btq-box h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.subtitle {
+  font-size: 13px;
+  margin: 10px 0 16px;
+  opacity: 0.9;
+}
+
+.btq-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+#ethical {
+  flex: 1;
+  background: #3cb371;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#anyway {
+  flex: 1;
+  background: #e74c3c;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
